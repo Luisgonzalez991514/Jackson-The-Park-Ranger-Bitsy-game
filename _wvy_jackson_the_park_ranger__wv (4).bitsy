@@ -1,0 +1,651 @@
+{wvy}Jackson the Park Ranger{/wvy}{pg}{wvy}Help Jackson pick up the trash around the park{/wvy}{drwi "trash"}
+
+# BITSY VERSION 8.14
+
+! VER_MAJ 8
+! VER_MIN 14
+! ROOM_FORMAT 1
+! DLG_COMPAT 0
+! TXT_MODE 0
+
+PAL 0
+0,0,0
+80,255,98
+51,54,255
+NAME blueprint
+
+ROOM 0
+a,0,0,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,0,0,a,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,a,0,a,a,a,a,a,0,a,a,a,a,a
+a,0,0,a,0,0,0,0,0,a,0,a,0,0,0,a
+a,0,0,a,a,a,a,a,a,a,0,a,a,a,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,a,0,a
+a,0,0,a,a,a,a,a,a,a,a,a,a,a,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,a,a,a,a,a,a,a,a,0,0,0,0,a
+a,0,0,0,0,0,0,a,a,0,0,a,a,a,a,a
+a,0,0,0,0,0,0,a,a,0,0,a,a,0,0,a
+a,0,0,a,a,0,0,0,0,0,0,0,0,0,0,0
+a,0,0,a,a,0,0,0,0,a,a,0,0,0,0,0
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+NAME Start Room
+ITM 0 13,1
+ITM 0 8,3
+ITM 0 11,7
+ITM 0 9,11
+ITM 0 13,12
+ITM 0 12,3
+ITM 0 2,13
+ITM 0 1,5
+EXT 15,13 1 1,13 FX tunnel
+PAL 0
+TUNE 2
+
+ROOM 1
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,a,0,a,a,a,a,a,0,a,a,a,a,a
+a,a,a,a,0,a,0,0,0,a,0,a,a,a,0,a
+a,0,0,0,0,a,0,a,a,a,0,a,a,a,0,a
+a,0,0,0,0,a,0,a,a,a,0,0,0,0,0,a
+a,0,a,0,0,a,0,0,0,0,0,a,a,a,a,a
+a,0,a,0,0,a,a,a,a,a,0,a,0,a,a,0
+a,0,a,0,0,0,0,a,0,a,0,a,0,a,a,0
+a,0,a,0,0,0,0,a,0,a,0,a,0,a,a,0
+a,0,a,a,a,a,0,a,0,a,0,a,0,a,a,0
+a,0,0,0,0,a,0,a,0,a,0,0,0,0,0,0
+a,a,a,a,a,a,0,a,0,a,0,0,a,a,0,a
+0,0,0,0,0,0,0,a,0,0,0,0,a,0,0,0
+0,0,0,0,0,0,0,a,0,0,0,0,a,0,0,0
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+NAME End Room
+ITM 0 6,8
+ITM 0 3,11
+ITM 0 2,2
+ITM 0 7,3
+ITM 0 14,4
+ITM 0 14,1
+ITM 0 15,7
+ITM 0 12,7
+ITM 0 8,9
+ITM 0 5,14
+EXT 1,13 0 15,13
+END i 15,13
+PAL 0
+
+TIL a
+00111100
+01111110
+01111110
+00111100
+00011000
+00011000
+00011000
+00011000
+NAME block
+WAL true
+
+SPR A
+00011000
+00011000
+00011000
+00111100
+01111110
+10111101
+00100100
+00100000
+>
+00011000
+00011000
+00011000
+00111100
+01111110
+10111101
+00100100
+00000100
+POS 0 2,0
+
+SPR a
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+>
+00000000
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+NAME Fox 1
+DLG 0
+POS 0 2,14
+BLIP 1
+
+SPR b
+10001000
+11011000
+00100000
+00100000
+00111110
+00111110
+00100010
+00100010
+>
+00000000
+00000000
+10001000
+11111000
+00100000
+00111110
+00111110
+00100010
+NAME Deer
+DLG 7
+POS 0 14,1
+
+SPR c
+10001000
+11011000
+00100000
+00100000
+00111110
+00111110
+00100010
+00100010
+>
+00000000
+00000000
+10001000
+11111000
+00100000
+00111110
+00111110
+00100010
+NAME Deer 2
+DLG 6
+POS 0 2,2
+
+SPR d
+10001000
+11011000
+00100000
+00100000
+00111110
+00111110
+00100010
+00100010
+>
+00000000
+00000000
+10001000
+11111000
+00100000
+00111110
+00111110
+00100010
+NAME Deer 3
+DLG a
+POS 0 10,11
+
+SPR e
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+>
+00000000
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+NAME Fox 2
+DLG 9
+POS 0 12,7
+
+SPR f
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+>
+00000000
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+NAME Fox 3
+DLG b
+POS 0 14,12
+
+SPR g
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+>
+00000000
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+NAME Fox 4
+DLG d
+POS 1 6,14
+
+SPR h
+10001000
+11011000
+00100000
+00100000
+00111110
+00111110
+00100010
+00100010
+>
+00000000
+00000000
+10001000
+11111000
+00100000
+00111110
+00111110
+00100010
+NAME Deer 4
+DLG e
+POS 1 4,11
+
+SPR i
+10001000
+11011000
+00100000
+00100000
+00111110
+00111110
+00100010
+00100010
+>
+00000000
+00000000
+10001000
+11111000
+00100000
+00111110
+00111110
+00100010
+NAME Deer 5
+DLG f
+POS 1 1,2
+
+SPR j
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+>
+00000000
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+NAME Fox 5
+DLG g
+POS 1 8,3
+
+SPR k
+10001000
+11011000
+00100000
+00100000
+00111110
+00111110
+00100010
+00100010
+>
+00000000
+00000000
+10001000
+11111000
+00100000
+00111110
+00111110
+00100010
+NAME deer 6
+DLG h
+POS 1 14,3
+
+SPR l
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+00100100
+>
+00000000
+00000000
+00000000
+01010001
+01110001
+01110010
+01111100
+00111100
+NAME Fox 6
+DLG j
+POS 1 8,8
+
+SPR m
+00001000
+00010100
+00001000
+00011100
+00101010
+00001000
+00010100
+00100000
+>
+00001000
+00010100
+00001000
+00011100
+00101010
+00001000
+00010100
+00000010
+DLG c
+POS 1 13,13
+
+ITM 0
+00000000
+00000000
+00000000
+00000000
+00000000
+00011000
+00111100
+01111110
+NAME trash
+DLG 1
+
+ITM 1
+00000000
+00111100
+00100100
+00111100
+00010000
+00011000
+00010000
+00011000
+NAME key
+BLIP 2
+
+DLG 0
+"""
+{sequence
+  - I thought I was done for
+  - Littering in forest causes the deaths 
+    of over 1 million animals a year 
+}
+"""
+NAME Fox dialog
+
+DLG 1
+"""
+{shuffle
+  - Great Job Ranger!
+  - Keep it up!
+}
+"""
+NAME trash dialog
+
+DLG 6
+"""
+{sequence
+  - Help!!!
+    There is so much trash around the forest
+  - Get rid of it all before it harms our forest 
+}
+"""
+NAME Deer 2 dialog 1
+
+DLG 7
+"""
+{sequence
+  - Thank you for saving me!
+  - There are others trapped around 
+    the forest find them please!
+}
+"""
+NAME Deer dialog
+
+DLG 9
+"""
+{sequence
+  - Thank you for helping me escape 
+  - Leaving your trash on a hike harms 
+    wildlife in more ways than one 
+}
+"""
+NAME Fox 2 dialog
+
+DLG a
+"""
+{sequence
+  - There is trash everywhere!
+  - Litter can entangle, suffocate, and
+    poison us!
+}
+"""
+NAME Deer 3 dialog
+
+DLG b
+"""
+{sequence
+  - Thanks for the help!
+  - Enough trash can contaminate our 
+    water supply's which is not good for us 
+}
+"""
+NAME Fox 3 dialog
+
+DLG c
+"""
+*You arrest the culprit 
+who has been leaving the trash*
+"""
+NAME Arrest Dialog
+
+DLG d
+"""
+{sequence
+  - I saw someone pass through here leaving
+    trash everywhere!
+  - Please catch him Ranger Jackson
+}
+"""
+NAME Fox 4 dialog
+
+DLG e
+"""
+{sequence
+  - Thanks for the save!
+  - This trash can also act as a fire hazard
+    and burn down the whole forest!
+}
+"""
+NAME Deer 4 dialog
+
+DLG f
+"""
+{sequence
+  - I was following the guy leaving trash 
+    everywhere but I got lost
+  - I know he is the one behind this!
+}
+"""
+NAME Deer 5 dialog
+
+DLG g
+"""
+{sequence
+  - Me and my sister got split up by all this
+    please make sure she is OK!
+  - 
+}
+"""
+NAME Fox 5 dialog
+
+DLG h
+"""
+{sequence
+  - Your getting Close!
+  - I know the culprit is around here 
+    somewhere I can smell him 
+}
+"""
+NAME deer 6 dialog
+
+DLG i
+{wvy}You Saved the Forest!{/wvy}
+NAME ending 1
+
+DLG j
+"""
+{sequence
+  - I lost my brother cause of all the 
+    trash everywhere
+  - I sure hope he is ok.
+}
+"""
+NAME Fox 6 dialog
+
+VAR a
+42
+
+TUNE 1
+3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
+16d2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+>
+4l,0,0,0,s,0,3l,0,0,0,2s,0,2m,0,2r,0
+16m2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+>
+3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
+16l2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+>
+3l,0,0,0,s,0,4m,0,0,0,4r,0,0,0,0,0
+16s2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME finale fanfare
+KEY C,D,E,F,G,A,B d,r,m,s,l
+TMP XFST
+SQR P2 P8
+ARP INT8
+
+TUNE 2
+0,0,2G,0,A,0,B,0,2C5,0,B,A,G,0,2G,0
+G3,0,D,0,G3,0,D,0,2A3,0,E,0,C,0,E,0
+>
+2F#,0,G,0,A,0,F#,0,2E,0,F#,E,4D,0,0,0
+2D,0,E,0,F#,0,D,0,2C,0,2G3,0,2F#3,0,D2,0
+>
+0,0,2G,0,A,0,B,0,2C5,0,B,A,G,0,G,0
+2G2,0,D,D5,G3,G,D,0,2C2,0,E,E5,C3,C,E5,0
+>
+2D,0,C5,B,A,0,A,0,4A,0,0,0,F#,0,0,0
+A2,0,E3,0,C3,0,E3,0,D3,0,A3,0,D,0,0,0
+>
+2E5,0,2G,0,2G5,0,2G,0,2F#5,0,2E5,0,2D5,0,2C5,0
+2C3,0,2E,0,2E5,0,2C,0,2A3,0,2C,0,2F#,0,2E,0
+>
+3B,0,0,0,2E5,0,D5,0,4A,0,0,0,G,0,0,0
+2G3,0,B3,0,2D,0,D3,0,2C3,0,G3,0,D#,0,0,0
+>
+0,0,2G,0,A,0,2B,0,C5,0,B,C5,A,0,G,0
+A2,0,A3,0,C,0,2D,0,D#,0,D,E,C,0,C3,0
+>
+8B,0,0,0,0,0,0,0,A,0,2F#,0,E,0,D,0
+D3,0,A3,0,F#,0,D,0,C,0,2D3,0,C3,0,F#3,0
+NAME tuneful town
+TMP FST
+SQR P4 P2
+
+TUNE 3
+3F5,0,0,A#,0,2C#5,0,A#,3F5,0,0,F#5,0,0,2F5,0
+A#3,C#,F,0,0,F,C#,F,A#3,C#,F,A#,0,A#,C#,F
+>
+3F5,0,0,A,0,2C#5,0,A,3F5,0,0,2A#5,0,A#,D#5,0
+A3,C#,F,A3,0,F,C#,F,A,C#,F,0,D#,0,C#5,0
+>
+4F5,0,0,0,G#,2C#5,0,G#,3F5,0,0,D#5,0,F5,2C#5,0
+G#3,C#,F,3F#,0,0,2F,0,G#3,C#,F,F#,B,A,F,D#
+>
+4D#5,0,0,0,0,0,2A#,0,4A#,0,0,0,0,0,A#,C5
+G3,D#,F,G,0,D#,F,G,G3,D#,G,F,0,F,D#,C#3
+>
+4C#5,0,0,0,0,0,2C#5,0,3C#5,0,0,D#5,0,0,2C#5,0
+F#2,C#,F#3,A#3,0,F#3,C#3,F#3,F#2,A,F#3,C#,0,F#3,A3,F#3
+>
+3C#5,0,0,F,3C5,0,0,C,3C5,0,0,D#,3A#,0,0,0
+F2,D#3,A3,0,0,F3,C#,0,F#2,A#3,D#3,0,0,F#3,C#,C
+>
+3A#,0,0,0,C5,0,C#5,0,A#,0,C#,D#,G#,G#3,0,C#3
+C3,A#3,C,E,A,0,A#,0,0,B2,B3,0,2F,0,0,0
+>
+A#,0,A#3,0,C#,0,F,0,A#,0,0,0,0,0,0,0
+A#2,0,C#3,0,F3,0,A#3,0,D,0,0,0,0,F#3,0,F3
+NAME rhythmic ruins
+TMP MED
+SQR P4 P4
+
+BLIP 1
+E5,B5,B5
+NAME meow
+ENV 40 99 4 185 138
+BEAT 61 115
+SQR P2
+
+BLIP 2
+D5,E5,D5
+NAME pick up key
+ENV 99 65 6 96 152
+BEAT 95 0
+SQR P4
+
